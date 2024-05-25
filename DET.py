@@ -12,21 +12,18 @@ class Knot(Detail):
         self.material = material
 
     def purpose(self):
-        print(f'The knot held the two pieces {self.material} together')
+        print(f'The knot held the two {self.material} pieces together\n')
 
 class Machine(Detail):
-    def purpose():
-        print("Make a product")
+    def __init__(self, product):
+        self.product = product
+
+    def purpose(self):
+        print(f'Make a {self.product}\n')
 
 class Product(Detail):
     def __init__(self, cost):
         self.cost = cost
         
     def purpose(self):
-        print(f'Usless. absoulutley usless. Its not even worth {self.cost}')
-                
-
-
-
-vase = Product("15 рубликов")
-vase.purpose
+        print(f'Usless. absoulutley usless. Its not even cost {self.cost}\n')
