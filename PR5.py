@@ -11,7 +11,7 @@ class Employee(Person):
         self.completed_task = 0
  
     def complete_work(self):
-        print (f'Employee begin to complete {self.task}')
+        print (f'Employee begin to complete {self.task}\n')
         self.completed_task += 1
 
 class Worker(Person):
@@ -19,11 +19,11 @@ class Worker(Person):
         self.work = work
 
     def complete_work(self):
-         print(f'Worker begin to complete {self.work}')
+         print(f'Worker begin to complete {self.work}\n')
 
 class Engineer(Worker):
     def __init__(self, engineer_work):
         self.engineer_work = engineer_work
 
     def complete_work(self):
-        print(f'Engineer begin to complete {self.engineer_work}')
+        print(f'Engineer begin to complete {self.engineer_work}\n')
